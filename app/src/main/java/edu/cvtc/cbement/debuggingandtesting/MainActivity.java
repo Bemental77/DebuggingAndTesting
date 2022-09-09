@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
       computeResult(Calculator.Operator.DIVISION);
     } catch (ArithmeticException e) {
       Log.e(TAG, "ArithmeticException", e);
-      mTextViewResult.setText("Error on Division");
+      mTextViewResult.setText("Oops on Division");
     }
   }
 
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
       numberTwo = getNumber(mEditTextNumberTwo);
     } catch (NumberFormatException e) {
       Log.e(TAG, "NumberFormatException", e);
-      mTextViewResult.setText("Error Number Format Exception");
+      mTextViewResult.setText("Oops Number Format Exception");
       return;
     }
 
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         break;
 
       default:
-        result = "Error";
+        result = "Oops couldn't perform the operator correctly";
         break;
     }
 
