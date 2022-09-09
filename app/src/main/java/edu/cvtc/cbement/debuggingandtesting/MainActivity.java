@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
   private void computeResult(Calculator.Operator operator) {
 
-    int numberOne;
-    int numberTwo;
+    double numberOne;
+    double numberTwo;
     String result;
 
     try {
@@ -87,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
     mTextViewResult.setText(result);
   }
 
-  private static int getNumber(EditText editTextNumber) {
-    return Integer.valueOf(getText(editTextNumber));
+  private static Double getNumber(EditText editTextNumber) {
+    return Double.valueOf(getText(editTextNumber));
   }
 
   private static String getText(EditText editTextNumber) {

@@ -4,19 +4,19 @@ public class Calculator {
 
   public enum Operator {ADDITION, SUBTRACTION, MULTIPLICATION, DIVISION}
 
-  public int addition(int numberOne, int numberTwo) {
+  public double addition(double numberOne, double numberTwo) {
     return numberOne + numberTwo;
   }
 
-  public int subtraction(int numberOne, int numberTwo) {
+  public double subtraction(double numberOne, double numberTwo) {
     return numberOne - numberTwo;
   }
 
-  public int multiplication(int numberOne, int numberTwo) {
+  public double multiplication(double numberOne, double numberTwo) {
     return numberOne * numberTwo;
   }
 
-  public int division(int numberOne, int numberTwo) {
+  public double division(double numberOne, double numberTwo) {
     return numberOne / numberTwo;
   }
 }
